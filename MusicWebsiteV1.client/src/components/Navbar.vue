@@ -1,12 +1,15 @@
 <template>
-  <nav class="navbar mainfont navbar-expand-lg navbar-dark bg-dark px-3">
+  <nav
+    class="navbar mainfont navbar-expand-lg fixed-top navbar-dark bg-dark px-3"
+  >
     <router-link class="navbar-brand d-flex" :to="{ name: 'Home' }">
       <div class="d-flex flex-column align-items-center">
         <img
+          href="#"
           class="rounded-circle hoverable"
           alt="logo"
           src="src\assets\img\Recurso 31MANDALA.svg"
-          height="60"
+          height="77"
         />
       </div>
     </router-link>
@@ -21,30 +24,62 @@
     >
       <span class="navbar-toggler-icon" />
     </button>
-    <div class="collapse navbar-collapse" id="navbarText">
+    <div
+      style="z-index: 2"
+      class="collapse col-2 navbar-collapse"
+      id="navbarText"
+    >
       <ul class="navbar-nav me-auto">
-        <li>
-          <router-link
-            :to="{ name: 'About' }"
-            class="btn text-primary lighten-30 hoverable2 text-uppercase"
+        <li class="d-flex justify-content-between align-items-end">
+          <a
+            href="#about"
+            style="z-index: 2"
+            class="
+              btn
+              mx-1
+              p-1
+              text-primary
+              lighten-30
+              hoverable2
+              text-uppercase
+            "
           >
             About
-          </router-link>
-          <router-link
-            :to="{ name: 'About' }"
-            class="btn text-primary lighten-30 hoverable2 text-uppercase"
+          </a>
+          <a
+            href="#portfolio"
+            style="z-index: 2"
+            class="
+              btn
+              mx-1
+              p-1
+              text-primary
+              lighten-30
+              hoverable2
+              text-uppercase
+            "
           >
-            About
-          </router-link>
-          <router-link
-            :to="{ name: 'About' }"
-            class="btn text-primary lighten-30 hoverable2 text-uppercase"
+            My_Work
+          </a>
+          <a
+            href="#contact"
+            style="z-index: 2"
+            class="
+              btn
+              p-1
+              mx-1
+              text-primary
+              lighten-30
+              hoverable2
+              text-uppercase
+            "
           >
-            About
-          </router-link>
+            Contact
+          </a>
+          <a></a>
         </li>
       </ul>
-      <span class="col-10">
+      <span style="transform: translateX(-14vw); z-index: 0" class="col-12">
         <img
           class="pulse"
           src="src\assets\img\Recurso 15MODERN ICON.svg"
