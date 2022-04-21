@@ -1,5 +1,5 @@
 <template>
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark px-3">
+  <nav class="navbar mainfont navbar-expand-lg navbar-dark bg-dark px-3">
     <router-link class="navbar-brand d-flex" :to="{ name: 'Home' }">
       <div class="d-flex flex-column align-items-center">
         <img
@@ -26,19 +26,19 @@
         <li>
           <router-link
             :to="{ name: 'About' }"
-            class="btn text-success lighten-30 selectable text-uppercase"
+            class="btn text-primary lighten-30 hoverable2 text-uppercase"
           >
             About
           </router-link>
           <router-link
             :to="{ name: 'About' }"
-            class="btn text-success lighten-30 selectable text-uppercase"
+            class="btn text-primary lighten-30 hoverable2 text-uppercase"
           >
             About
           </router-link>
           <router-link
             :to="{ name: 'About' }"
-            class="btn text-success lighten-30 selectable text-uppercase"
+            class="btn text-primary lighten-30 hoverable2 text-uppercase"
           >
             About
           </router-link>
@@ -94,37 +94,44 @@ img {
 
 .hoverable2:hover {
   filter: drop-shadow(0px 0px 5px rgb(63, 255, 98));
-  transition: 500ms ease-in-out;
+  transition: 150ms ease-in-out;
   cursor: pointer;
+}
+.hoverable:active {
+  transform: scale(0.98);
+  transition: 50ms ease-in-out;
 }
 body {
   background: #000;
 }
 .pulse {
-  filter: drop-shadow(0px 10px 10px rgb(9, 255, 0));
+  filter: drop-shadow(0px 10px 10px rgb(61, 255, 54));
   animation: pulsate 3s ease-in-out infinite;
 }
 @keyframes pulsate {
   0% {
-    filter: drop-shadow(0px 0px 5px rgba(9, 255, 0, 0.456));
+    filter: drop-shadow(0px 0px 5.1px rgba(9, 255, 0, 0.364));
   }
   25% {
-    filter: drop-shadow(0px 0px 7px rgba(9, 255, 0, 0.882));
+    filter: drop-shadow(0px 0px 5.2px rgba(64, 255, 57, 0.882));
   }
   35% {
-    filter: drop-shadow(0px 0px 5px rgba(9, 255, 0, 0.634));
+    filter: drop-shadow(0px 0px 5.4px rgba(100, 255, 95, 0.452));
   }
   50% {
-    filter: drop-shadow(0px 0px 5px rgb(9, 255, 0));
+    filter: drop-shadow(0px 0px 5.8px rgb(62, 255, 55));
   }
   75% {
-    filter: drop-shadow(0px 0px 6px rgba(9, 255, 0, 0.814));
+    filter: drop-shadow(0px 0px 5.4px rgba(86, 255, 80, 0.814));
   }
   85% {
-    filter: drop-shadow(0px 0px 5px rgba(9, 255, 0, 0.595));
+    filter: drop-shadow(0px 0px 5.2px rgba(73, 255, 67, 0.595));
   }
   100% {
-    filter: drop-shadow(0px 0px 8px rgba(9, 255, 0, 0.456));
+    filter: drop-shadow(0px 0px 5.1px rgba(82, 255, 76, 0.314));
   }
+}
+.mainfont {
+  font-family: monospace;
 }
 </style>
