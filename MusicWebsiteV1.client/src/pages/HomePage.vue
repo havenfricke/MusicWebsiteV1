@@ -1,29 +1,42 @@
 <template>
   <div class="container-fluid">
-    <div style="z-index: 1" class="cube-wrap parallax">
-      <div style="z-index: 1" class="cube">
+    <div style="z-index: 0" class="cube-wrap parallax">
+      <div style="z-index: 0" class="cube">
+        <div style="z-index: 0" class="side top border pulse border-white">
+          <img
+            style="z-index: 0"
+            class="col-2 p-2"
+            src="src\assets\img\Recurso 222MODERN ICON.svg"
+            alt=""
+          />
+          <img
+            style="z-index: 0"
+            class="col-2 p-2"
+            src="src\assets\img\Recurso 236MODERN ICON.svg"
+            alt=""
+          />
+        </div>
         <div
-          style="z-index: 1"
-          class="side top border pulse border-white"
-        ></div>
-        <div
-          style="z-index: 1"
+          style="z-index: 0"
           class="side bottom border pulse border-white"
         ></div>
+        <div style="z-index: 0" class="side front border pulse border-white">
+          <img
+            class="mt-5 p-4"
+            src="src\assets\img\Recurso 292MODERN ICON.svg"
+            alt=""
+          />
+        </div>
         <div
-          style="z-index: 1"
-          class="side front border pulse border-white"
-        ></div>
-        <div
-          style="z-index: 1"
+          style="z-index: 0"
           class="side back border pulse border-white"
         ></div>
         <div
-          style="z-index: 1"
+          style="z-index: 0"
           class="side left border pulse border-white"
         ></div>
         <div
-          style="z-index: 1"
+          style="z-index: 0"
           class="side right border pulse border-white"
         ></div>
       </div>
@@ -52,18 +65,22 @@
           unde.
         </p>
       </div>
+
       <div class="row mt-5 justify-content-end">
-        <div class="circle justify-content-center col-5">
+        <div class="circle mt-5 justify-content-center col-5">
           <img
-            class="img-fluid"
+            class="img-fluid mt-5"
             id="mandala"
             src="src\assets\img\Recurso 9MANDALA.svg"
             alt="scroll"
           />
         </div>
 
-        <div style="z-index: 2" class="col-7 mb-5 tshadow mainfont text-white">
-          <h1>More</h1>
+        <div
+          style="z-index: 2"
+          class="col-7 me-5 pt-5 mt-5 tshadow mainfont text-white"
+        >
+          <h1 class="mt-4">More</h1>
           Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi
           impedit nostrum vel excepturi maxime deserunt eius suscipit
           exercitationem velit quam, esse cum debitis consequuntur aut nam
@@ -77,21 +94,61 @@
           eligendi ea quas nesciunt. Quos eos expedita doloremque placeat dicta
           similique reiciendis?
         </div>
+      </div>
+    </div>
+    <div hidden style="z-index: 10" class="container-fluid pt-5 mt-5 parallax2">
+      <div class="row d-flex justify-content-center align-items-center">
+        <div class="mt-5"></div>
+        <div class="mt-5"></div>
+        <div class="mt-5"></div>
+        <div class="mt-5"></div>
+        <div class="mt-5"></div>
+        <div class="mt-5"></div>
+        <div class="mt-5"></div>
+        <div class="mt-5"></div>
+        <div class="mt-5"></div>
+        <div class="mt-5"></div>
+        <div class="mt-5"></div>
+        <div class="mt-5"></div>
+        <div class="mt-5"></div>
+        <div class="mt-5"></div>
+      </div>
+    </div>
+    <div class="row mt-5 justify-content-start"></div>
+    <div class="p-5"></div>
+    <div class="row mt-5">
+      <div
+        style="transform: translatex(8vw)"
+        class="pulse col-4 border border-primary p-3 text-primary mainfont pt-4"
+      >
+        ! Warning !
+        <h6 class="border border-primary p-1 col-12 mb-5 text-primary">
+          passion and mission driven developer
+          <span class="col-1 textinput mainfont mx-1 px-1"> </span>
+        </h6>
+        <img
+          class="pulse mt-3"
+          src="src\assets\img\Recurso 12GRAPHS.svg"
+          alt=""
+        />
+      </div>
+    </div>
+    <div class="row mt-5 justify-content-start">
+      <div
+        style="z-index: 2"
+        class="col-12 rounded-bottom p-5 mt-5 text-primary mainfont"
+      >
+        <h1 class="tshadow">SKILLS</h1>
 
-        <div class="p-5"></div>
-        <div class="p-5"></div>
-        <div class="p-5"></div>
+        <div class="container-fluid mt-3 d-flex justify-content-around col-12">
+          <i class="mdi rounded-circle px-5 mdi-delete" id="this"></i>
+          <i class="mdi rounded-circle px-5 mdi-delete" id="that"></i>
+          <i class="mdi rounded-circle px-5 mdi-delete" id="theother"></i>
+          <i class="mdi rounded-circle px-5 mdi-delete" id="andthis"></i>
+        </div>
       </div>
     </div>
   </div>
-  <div style="z-index: 0" class="container-fluid parallax2"></div>
-  <div class="p-5"></div>
-  <div class="p-5"></div>
-  <div class="p-5"></div>
-  <div class="p-5"></div>
-  <div class="p-5"></div>
-  <div class="p-5"></div>
-  <div class="p-5"></div>
 </template>
 
 
@@ -118,6 +175,7 @@ function scrollRotate() {
 }
 
 
+
 </script>
 
 <style scoped lang="scss">
@@ -140,10 +198,11 @@ function scrollRotate() {
 }
 .parallax2 {
   background-image: url("../assets/img/matrix.gif");
-  height: 100vh;
+  height: 200vh;
   width: 100%;
   background-repeat: no-repeat;
   background-size: cover;
+  background-color: black;
 }
 .mainfont {
   font-family: monospace;
@@ -165,15 +224,15 @@ body {
   --size: 33vmin;
   position: fixed;
   top: 55%;
-  left: 66%;
+  left: 70%;
   width: 0;
   height: 0;
   perspective: 100vmin;
 }
 .cube {
   transform-style: preserve-3d;
-  transform: rotateX(100deg) rotateZ(45deg) rotateY(-45deg);
-  animation: cube 7s linear;
+  transform: rotateX(95deg) rotateZ(40deg) rotateY(-45deg);
+  animation: cube 1s linear;
 }
 @keyframes cube {
   to {
@@ -191,27 +250,27 @@ body {
   left: calc(var(--size) * -0.5);
 }
 .top {
-  background-color: rgba(77, 255, 107, 0.444);
+  background-color: rgba(77, 255, 107, 0.111);
   transform: rotateX(90deg) translateZ(calc(var(--size) * 0.5));
 }
 .bottom {
-  background-color: rgba(77, 255, 107, 0.444);
+  background-color: rgba(77, 255, 107, 0.111);
   transform: rotateX(90deg) translateZ(calc(var(--size) * -0.5));
 }
 .left {
-  background-color: rgba(77, 255, 107, 0.444);
+  background-color: rgba(77, 255, 107, 0.111);
   transform: rotateY(90deg) translateZ(calc(var(--size) * 0.5));
 }
 .right {
-  background-color: rgba(77, 255, 107, 0.444);
+  background-color: rgba(77, 255, 107, 0.111);
   transform: rotateY(90deg) translateZ(calc(var(--size) * -0.5));
 }
 .front {
-  background-color: rgba(77, 255, 107, 0.444);
+  background-color: rgba(77, 255, 107, 0.111);
   transform: translateZ(calc(var(--size) * 0.5));
 }
 .back {
-  background-color: rgba(77, 255, 107, 0.444);
+  background-color: rgba(77, 255, 107, 0.111);
   transform: translateZ(calc(var(--size) * -0.5));
 }
 
@@ -230,10 +289,10 @@ body {
 }
 @keyframes pulsate {
   0% {
-    filter: drop-shadow(0px 0px 5px rgba(100, 255, 100, 0.111));
+    filter: drop-shadow(0px 0px 5px rgba(100, 255, 100, 0));
   }
   10% {
-    filter: drop-shadow(0px 0px 4.8px rgba(100, 248, 100, 0.222));
+    filter: drop-shadow(0px 0px 4.8px rgba(100, 248, 100, 0.099));
   }
   15% {
     filter: drop-shadow(0px 0px 5.2px rgba(100, 255, 100, 0.333));
@@ -263,10 +322,10 @@ body {
     filter: drop-shadow(0px 0px 5.4px rgba(100, 255, 100, 0.333));
   }
   95% {
-    filter: drop-shadow(0px 0px 5px rgba(100, 255, 100, 0.222));
+    filter: drop-shadow(0px 0px 5px rgba(100, 255, 100, 0.089));
   }
   100% {
-    filter: drop-shadow(0px 0px 5.2px rgba(100, 255, 100, 0.111));
+    filter: drop-shadow(0px 0px 5.2px rgba(100, 255, 100, 0));
   }
 }
 
@@ -279,5 +338,72 @@ body {
 #mandala {
   width: 100px;
   height: 100px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  height: 100vh;
+  width: 100vw;
+  background: #18191f;
+}
+
+#this,
+#that,
+#theother,
+#andthis {
+  font-size: 8em;
+  background-color: #18191f;
+  color: #fff;
+  box-shadow: 2px 2px 2px #00000080, 10px 1px 12px #00000080,
+    2px 2px 10px #00000080, 2px 2px 3px #00000080, inset 2px 2px 10px #00000080,
+    inset 2px 2px 10px #00000080, inset 2px 2px 10px #00000080,
+    inset 2px 2px 10px #00000080;
+  border-radius: 29px;
+  padding: 11px 19px;
+  margin: 0 40px;
+  animation: animate 3s linear infinite;
+  text-shadow: 0 0 50px #0072ff, 0 0 100px #0072ff, 0 0 150px #0072ff,
+    0 0 200px #0072ff;
+}
+#twitter {
+  animation-delay: 0.3s;
+}
+#facebook {
+  animation-delay: 0.7s;
+}
+#github {
+  animation-delay: 0.1s;
+}
+
+@keyframes animate {
+  from {
+    filter: hue-rotate(260deg);
+  }
+  to {
+    filter: hue-rotate(277deg);
+  }
+}
+.rotatemarq {
+  transform: rotate(90deg);
+}
+
+.textinput {
+  background-color: #00f867;
+  text-decoration-color: #00f867;
+  animation: onoff 1s ease infinite;
+}
+
+@keyframes onoff {
+  from {
+    background-color: #00f86700;
+    text-decoration-color: #00f86700;
+  }
+  to {
+    background-color: #00f867;
+    text-decoration-color: #00f867;
+  }
 }
 </style>
