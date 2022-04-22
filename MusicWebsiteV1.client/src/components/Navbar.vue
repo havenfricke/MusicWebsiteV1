@@ -31,7 +31,7 @@
     >
       <ul class="navbar-nav me-auto">
         <li class="d-flex justify-content-between align-items-end">
-          <a
+          <span
             href="#about"
             style="z-index: 2"
             class="
@@ -45,8 +45,8 @@
             "
           >
             About
-          </a>
-          <a
+          </span>
+          <span
             href="#portfolio"
             style="z-index: 2"
             class="
@@ -60,8 +60,8 @@
             "
           >
             My_Work
-          </a>
-          <a
+          </span>
+          <span
             href="#contact"
             style="z-index: 2"
             class="
@@ -75,7 +75,7 @@
             "
           >
             Contact
-          </a>
+          </span>
           <a></a>
         </li>
       </ul>
