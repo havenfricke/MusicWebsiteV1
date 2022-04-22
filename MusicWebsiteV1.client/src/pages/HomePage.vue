@@ -71,7 +71,7 @@ window.addEventListener('scroll', () => {
 
 <style scoped lang="scss">
 .tshadow {
-  text-shadow: rgba(0, 0, 0, 0.714) 1px 2px 6px;
+  text-shadow: rgba(0, 0, 0, 0.495) 1px 2px 6px;
 }
 .hoverable:hover {
   filter: drop-shadow(0px 0px 20px rgba(63, 255, 98, 0.603));
