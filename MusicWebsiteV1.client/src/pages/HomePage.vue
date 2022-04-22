@@ -1,15 +1,31 @@
 <template>
   <div class="container-fluid">
-    <div class="progress"></div>
-
-    <div style="z-index: 0" class="cube-wrap parallax">
-      <div style="z-index: 0" class="cube">
-        <div style="z-index: 0" class="side top border"></div>
-        <div style="z-index: 0" class="side bottom border"></div>
-        <div style="z-index: 0" class="side front border"></div>
-        <div style="z-index: 0" class="side back border"></div>
-        <div style="z-index: 0" class="side left border"></div>
-        <div style="z-index: 0" class="side right border"></div>
+    <div style="z-index: 1" class="cube-wrap parallax">
+      <div style="z-index: 1" class="cube">
+        <div
+          style="z-index: 1"
+          class="side top border pulse border-white"
+        ></div>
+        <div
+          style="z-index: 1"
+          class="side bottom border pulse border-white"
+        ></div>
+        <div
+          style="z-index: 1"
+          class="side front border pulse border-white"
+        ></div>
+        <div
+          style="z-index: 1"
+          class="side back border pulse border-white"
+        ></div>
+        <div
+          style="z-index: 1"
+          class="side left border pulse border-white"
+        ></div>
+        <div
+          style="z-index: 1"
+          class="side right border pulse border-white"
+        ></div>
       </div>
     </div>
     <div style="z-index: 2" class="row mt-5">
@@ -36,7 +52,16 @@
           unde.
         </p>
       </div>
-      <div class="row justify-content-end">
+      <div class="row mt-5 justify-content-end">
+        <div class="circle justify-content-center col-5">
+          <img
+            class="img-fluid"
+            id="mandala"
+            src="src\assets\img\Recurso 9MANDALA.svg"
+            alt="scroll"
+          />
+        </div>
+
         <div style="z-index: 2" class="col-7 mb-5 tshadow mainfont text-white">
           <h1>More</h1>
           Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi
@@ -52,9 +77,21 @@
           eligendi ea quas nesciunt. Quos eos expedita doloremque placeat dicta
           similique reiciendis?
         </div>
+
+        <div class="p-5"></div>
+        <div class="p-5"></div>
+        <div class="p-5"></div>
       </div>
     </div>
   </div>
+  <div style="z-index: 0" class="container-fluid parallax2"></div>
+  <div class="p-5"></div>
+  <div class="p-5"></div>
+  <div class="p-5"></div>
+  <div class="p-5"></div>
+  <div class="p-5"></div>
+  <div class="p-5"></div>
+  <div class="p-5"></div>
 </template>
 
 
@@ -64,9 +101,23 @@ export default {
 
   name: 'Home',
 }
+//cube rotate
 window.addEventListener('scroll', () => {
   document.body.style.setProperty('--scroll', window.pageYOffset / (document.body.offsetHeight - window.innerHeight));
 }, false);
+
+window.onscroll = function () {
+  scrollRotate();
+};
+
+
+//scroll spin
+function scrollRotate() {
+  let image = document.getElementById("mandala");
+  image.style.transform = "rotate(" + window.pageYOffset / 1.61803398875 + "deg)";
+}
+
+
 </script>
 
 <style scoped lang="scss">
@@ -87,6 +138,13 @@ window.addEventListener('scroll', () => {
   background-repeat: no-repeat;
   background-size: cover;
 }
+.parallax2 {
+  background-image: url("../assets/img/matrix.gif");
+  height: 100vh;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 .mainfont {
   font-family: monospace;
 }
@@ -103,24 +161,8 @@ body {
   }
 }
 
-.progress {
-  height: 3px;
-  width: 0%;
-  background-color: #fff;
-  position: fixed;
-  top: 0;
-  left: 0;
-  animation: progress 1s linear;
-}
-@keyframes progress {
-  to {
-    background-color: rgb(20, 255, 226);
-    width: 100%;
-  }
-}
-
 .cube-wrap {
-  --size: 35vmin;
+  --size: 33vmin;
   position: fixed;
   top: 55%;
   left: 66%;
@@ -130,8 +172,8 @@ body {
 }
 .cube {
   transform-style: preserve-3d;
-  transform: rotateX(0deg) rotateZ(45deg) rotateY(-45deg);
-  animation: cube 10s linear;
+  transform: rotateX(100deg) rotateZ(45deg) rotateY(-45deg);
+  animation: cube 7s linear;
 }
 @keyframes cube {
   to {
@@ -181,5 +223,61 @@ body {
   /* These last 2 properites clean up overshoot weirdness */
   animation-iteration-count: 1;
   animation-fill-mode: both;
+}
+.pulse {
+  filter: drop-shadow(0px 10px 10px rgba(61, 255, 54, 0.055));
+  animation: pulsate 2s ease-in-out infinite;
+}
+@keyframes pulsate {
+  0% {
+    filter: drop-shadow(0px 0px 5px rgba(100, 255, 100, 0.111));
+  }
+  10% {
+    filter: drop-shadow(0px 0px 4.8px rgba(100, 248, 100, 0.222));
+  }
+  15% {
+    filter: drop-shadow(0px 0px 5.2px rgba(100, 255, 100, 0.333));
+  }
+  25% {
+    filter: drop-shadow(0px 0px 5.4px rgba(90, 255, 90, 0.444));
+  }
+  35% {
+    filter: drop-shadow(0px 0px 5.6px rgba(90, 255, 90, 0.555));
+  }
+  45% {
+    filter: drop-shadow(0px 0px 5.4px rgba(80, 255, 80, 0.666));
+  }
+  50% {
+    filter: drop-shadow(0px 0px 5.8px rgba(80, 255, 80, 0.777));
+  }
+  60% {
+    filter: drop-shadow(0px 0px 5.2px rgba(90, 255, 90, 0.666));
+  }
+  65% {
+    filter: drop-shadow(0px 0px 5.4px rgba(90, 255, 90, 0.555));
+  }
+  75% {
+    filter: drop-shadow(0px 0px 5.8px rgba(100, 255, 100, 0.444));
+  }
+  85% {
+    filter: drop-shadow(0px 0px 5.4px rgba(100, 255, 100, 0.333));
+  }
+  95% {
+    filter: drop-shadow(0px 0px 5px rgba(100, 255, 100, 0.222));
+  }
+  100% {
+    filter: drop-shadow(0px 0px 5.2px rgba(100, 255, 100, 0.111));
+  }
+}
+
+.circle {
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  display: table-cell;
+}
+#mandala {
+  width: 100px;
+  height: 100px;
 }
 </style>

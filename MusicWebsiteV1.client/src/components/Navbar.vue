@@ -163,7 +163,7 @@ body {
     filter: drop-shadow(0px 0px 5.4px rgba(50, 255, 64, 0.696));
   }
   50% {
-    filter: drop-shadow(0px 0px 5.6px rgba(50, 255, 53, 0.734));
+    filter: drop-shadow(0px 0px 5.8px rgba(50, 255, 53, 0.734));
   }
   60% {
     filter: drop-shadow(0px 0px 5.2px rgba(50, 255, 53, 0.601));
@@ -172,13 +172,13 @@ body {
     filter: drop-shadow(0px 0px 5.4px rgba(50, 255, 53, 0.879));
   }
   75% {
-    filter: drop-shadow(0px 0px 5.6px rgba(50, 255, 81, 0.715));
+    filter: drop-shadow(0px 0px 5.8px rgba(50, 255, 81, 0.715));
   }
   85% {
     filter: drop-shadow(0px 0px 5.4px rgba(50, 255, 67, 0.69));
   }
   95% {
-    filter: drop-shadow(0px 0px 5px rgba(50, 255, 67, 0.737));
+    filter: drop-shadow(0px 0px 5px rgba(50, 255, 67, 0.603));
   }
   100% {
     filter: drop-shadow(0px 0px 5.2px rgba(50, 255, 84, 0.574));
