@@ -31,7 +31,7 @@
     >
       <ul class="navbar-nav me-auto">
         <li class="d-flex justify-content-between align-items-end">
-          <span
+          <!-- <span
             href="#about"
             style="z-index: 2"
             class="
@@ -45,7 +45,7 @@
             "
           >
             About
-          </span>
+          </span> -->
           <span
             href="#portfolio"
             style="z-index: 2"
@@ -79,7 +79,7 @@
           <a></a>
         </li>
       </ul>
-      <span style="transform: translateX(-14vw); z-index: 0" class="col-12">
+      <span style="transform: translateX(-10vw); z-index: 0" class="col-12">
         <img
           class="pulse"
           src="src\assets\img\Recurso 15MODERN ICON.svg"

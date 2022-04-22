@@ -15,25 +15,45 @@
     <div style="z-index: 2" class="row mt-5">
       <div
         style="z-index: 2"
-        class="col-3 p-5 mt-5 text-primary mainfont bg-dark"
+        class="col-4 rounded-bottom p-5 mt-5 text-primary mainfont bg-dark"
       >
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore, quasi.
-        Accusamus perspiciatis eligendi et similique consequuntur! Rem, eius
-        sint saepe voluptatem dolor delectus natus error aut blanditiis quis
-        quae omnis quia aliquam harum similique quod distinctio asperiores.
-        Tempora perspiciatis non dignissimos accusantium! Qui, animi facilis sed
-        alias culpa necessitatibus reiciendis consectetur, eligendi facere
-        accusamus accusantium cumque similique delectus libero natus? Impedit,
-        dolorem, debitis facilis maiores aliquam ratione facere molestiae eos,
-        nesciunt quisquam alias eligendi. Fugiat, quae dolore voluptatum,
-        tempora error maiores, tenetur doloremque perferendis quasi quibusdam
-        atque deserunt sit commodi molestias labore officiis similique dolorum?
-        Eligendi qui fugiat quis nobis delectus commodi minima veniam, dolore
-        iure, atque odio perferendis earum exercitationem dolorem voluptatem vel
-        pariatur nihil doloribus unde.
+        <h1 class="border-bottom tshadow">ABOUT</h1>
+        <p class="text-white tshadow">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore,
+          quasi. Accusamus perspiciatis eligendi et similique consequuntur! Rem,
+          eius sint saepe voluptatem dolor delectus natus error aut blanditiis
+          quis quae omnis quia aliquam harum similique quod distinctio
+          asperiores. Tempora perspiciatis non dignissimos accusantium! Qui,
+          animi facilis sed alias culpa necessitatibus reiciendis consectetur,
+          eligendi facere accusamus accusantium cumque similique delectus libero
+          natus? Impedit, dolorem, debitis facilis maiores aliquam ratione
+          facere molestiae eos, nesciunt quisquam alias eligendi. Fugiat, quae
+          dolore voluptatum, tempora error maiores, tenetur doloremque
+          perferendis quasi quibusdam atque deserunt sit commodi molestias
+          labore officiis similique dolorum? Eligendi qui fugiat quis nobis
+          delectus commodi minima veniam, dolore iure, atque odio perferendis
+          earum exercitationem dolorem voluptatem vel pariatur nihil doloribus
+          unde.
+        </p>
+      </div>
+      <div class="row justify-content-end">
+        <div style="z-index: 2" class="col-7 mb-5 tshadow mainfont text-white">
+          <h1>More</h1>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi
+          impedit nostrum vel excepturi maxime deserunt eius suscipit
+          exercitationem velit quam, esse cum debitis consequuntur aut nam
+          dolorem neque fugit numquam totam qui. Fuga quos dolor vitae possimus
+          officiis nostrum pariatur, aliquid laboriosam alias, molestias magni
+          optio deleniti? Nisi culpa est doloremque incidunt, assumenda beatae
+          maxime. Sed veritatis libero provident cumque esse officiis totam?
+          Porro blanditiis molestias nesciunt a sapiente necessitatibus,
+          officiis aut, quis incidunt in excepturi saepe, numquam quos quam.
+          Neque, obcaecati ut. Cupiditate dolorem iure necessitatibus dolores
+          eligendi ea quas nesciunt. Quos eos expedita doloremque placeat dicta
+          similique reiciendis?
+        </div>
       </div>
     </div>
-    <div id="portfolio"></div>
   </div>
 </template>
 
@@ -41,6 +61,7 @@
 <script>
 
 export default {
+
   name: 'Home',
 }
 window.addEventListener('scroll', () => {
@@ -49,6 +70,9 @@ window.addEventListener('scroll', () => {
 </script>
 
 <style scoped lang="scss">
+.tshadow {
+  text-shadow: rgba(0, 0, 0, 0.714) 1px 2px 6px;
+}
 .hoverable:hover {
   filter: drop-shadow(0px 0px 20px rgba(63, 255, 98, 0.603));
   transition: 444ms ease-in-out;
@@ -96,10 +120,10 @@ body {
 }
 
 .cube-wrap {
-  --size: 20vmin;
+  --size: 35vmin;
   position: fixed;
-  top: 50%;
-  left: 50%;
+  top: 55%;
+  left: 66%;
   width: 0;
   height: 0;
   perspective: 100vmin;
