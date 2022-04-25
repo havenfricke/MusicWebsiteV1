@@ -136,15 +136,107 @@
     <div class="row mt-5 justify-content-start">
       <div
         style="z-index: 2"
-        class="col-12 rounded-bottom p-5 mt-5 text-primary mainfont"
+        class="col-12 bg-dark rounded-bottom p-5 mt-5 text-primary mainfont"
       >
         <h1 class="tshadow">SKILLS</h1>
 
-        <div class="container-fluid mt-3 d-flex justify-content-around col-12">
-          <i class="mdi rounded-circle px-5 mdi-delete" id="this"></i>
-          <i class="mdi rounded-circle px-5 mdi-delete" id="that"></i>
-          <i class="mdi rounded-circle px-5 mdi-delete" id="theother"></i>
-          <i class="mdi rounded-circle px-5 mdi-delete" id="andthis"></i>
+        <div
+          class="
+            container-fluid
+            bg-dark
+            rounded
+            mt-3
+            d-flex
+            justify-content-around
+            row
+          "
+        >
+          <img
+            id="this"
+            class="img-fluid col-2 mt-5 mb-5"
+            src="src\assets\img\vue.png"
+            alt=""
+            title="Vue Framework"
+          />
+          <img
+            class="img-fluid col-2 mt-5 mb-5"
+            id="that"
+            src="src\assets\img\javascript.png"
+            alt=""
+            title="JavaScript"
+          />
+          <img
+            class="img-fluid col-2 mt-5 mb-5"
+            id="andthis"
+            src="src\assets\img\mySql.png"
+            alt=""
+            title="MySQL Databases"
+          />
+
+          <img
+            class="img-fluid col-2 mt-5 mb-5"
+            id="theother"
+            src="src\assets\img\node.png"
+            alt=""
+            title="Node.js and NPM Servers"
+          />
+          <img
+            class="img-fluid col-2 mt-5 mb-5"
+            id="andthis"
+            src="src\assets\img\bootstrap-logo-vector.svg"
+            alt=""
+            title="Bootstrap 5 framework"
+          />
+          <img
+            class="img-fluid col-2 mt-5 mb-5"
+            id="this"
+            src="src\assets\img\csharp.png"
+            alt=""
+            title="C# language"
+          />
+          <img
+            id="that"
+            class="img-fluid col-2 mt-5 mb-5"
+            src="src\assets\img\visual-studio-code.svg"
+            alt=""
+            title="Visual Studio Code"
+          />
+          <img
+            class="img-fluid col-2 mt-5 mb-5"
+            id="theother"
+            src="src\assets\img\HTML5_logo_and_wordmark.svg"
+            alt=""
+            title="HTML5"
+          />
+          <img
+            class="img-fluid col-2 mt-5 mb-5"
+            id="andthis"
+            src="src\assets\img\restapi.png"
+            alt=""
+            title="RESTful API conventions"
+          />
+          <img
+            class="img-fluid col-2 mt-5 mb-5"
+            id="this"
+            src="src\assets\img\CSS3_logo_and_wordmark.svg"
+            alt=""
+            style="height: 33vh"
+            title="CSS"
+          />
+          <img
+            id="that"
+            class="img-fluid col-2 mt-5 mb-5"
+            src="src\assets\img\dot-NET-Core.png"
+            alt=""
+            title=".NET Framework"
+          />
+          <img
+            id="that"
+            class="img-fluid object-fit col-2 mt-5 mb-5"
+            src="src\assets\img\auth0.png"
+            alt=""
+            title="Auth0 Services"
+          />
         </div>
       </div>
     </div>
@@ -380,10 +472,10 @@ body {
 
 @keyframes animate {
   from {
-    filter: hue-rotate(260deg);
+    filter: hue-rotate(0deg);
   }
   to {
-    filter: hue-rotate(277deg);
+    filter: hue-rotate(360deg);
   }
 }
 .rotatemarq {

@@ -47,21 +47,6 @@
             About
           </span> -->
           <span
-            href="#portfolio"
-            style="z-index: 2"
-            class="
-              btn
-              mx-1
-              p-1
-              text-primary
-              lighten-30
-              hoverable2
-              text-uppercase
-            "
-          >
-            My_Work
-          </span>
-          <span
             href="#contact"
             style="z-index: 2"
             class="
@@ -79,7 +64,7 @@
           <a></a>
         </li>
       </ul>
-      <span style="transform: translateX(-10vw); z-index: 0" class="col-12">
+      <span style="z-index: 0; width: 88vw" class="col-12">
         <img
           class="pulse"
           src="src\assets\img\Recurso 15MODERN ICON.svg"
