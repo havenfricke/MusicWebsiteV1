@@ -231,7 +231,7 @@
             src="src\assets\img\auth0.png"
             alt=""
             title="Auth0 Services"
-            style="height: 13vhe"
+            style="height: 13vh"
           />
         </div>
       </div>
