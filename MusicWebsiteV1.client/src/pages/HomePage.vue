@@ -1,6 +1,6 @@
 <template>
   <div class="container-fluid">
-    <div style="z-index: 0" class="cube-wrap parallax">
+    <div style="z-index: 0" id="andthis" class="cube-wrap parallax">
       <div style="z-index: 0" class="cube">
         <div style="z-index: 0" class="side top border pulse border-white">
           <img
@@ -44,9 +44,9 @@
     <div style="z-index: 2" class="row mt-5">
       <div
         style="z-index: 2"
-        class="col-4 rounded-bottom p-5 mt-5 text-primary mainfont bg-dark"
+        class="col-5 rounded-bottom p-5 mt-5 text-primary mainfont bg-dark"
       >
-        <h1 class="border-bottom tshadow">ABOUT</h1>
+        <h1 id="#" class="border-bottom tshadow">ABOUT</h1>
         <p class="text-white tshadow">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore,
           quasi. Accusamus perspiciatis eligendi et similique consequuntur! Rem,
@@ -78,21 +78,23 @@
 
         <div
           style="z-index: 2"
-          class="col-7 me-5 pt-5 mt-5 tshadow mainfont text-white"
+          class="col-9 me-5 pt-5 mt-3 tshadow mainfont text-white"
         >
-          <h1 class="mt-4">More</h1>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi
-          impedit nostrum vel excepturi maxime deserunt eius suscipit
-          exercitationem velit quam, esse cum debitis consequuntur aut nam
-          dolorem neque fugit numquam totam qui. Fuga quos dolor vitae possimus
-          officiis nostrum pariatur, aliquid laboriosam alias, molestias magni
-          optio deleniti? Nisi culpa est doloremque incidunt, assumenda beatae
-          maxime. Sed veritatis libero provident cumque esse officiis totam?
-          Porro blanditiis molestias nesciunt a sapiente necessitatibus,
-          officiis aut, quis incidunt in excepturi saepe, numquam quos quam.
-          Neque, obcaecati ut. Cupiditate dolorem iure necessitatibus dolores
-          eligendi ea quas nesciunt. Quos eos expedita doloremque placeat dicta
-          similique reiciendis?
+          <h1 class="mt-4 text-primary ms-2">More</h1>
+          <p class="ms-3">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi
+            impedit nostrum vel excepturi maxime deserunt eius suscipit
+            exercitationem velit quam, esse cum debitis consequuntur aut nam
+            dolorem neque fugit numquam totam qui. Fuga quos dolor vitae
+            possimus officiis nostrum pariatur, aliquid laboriosam alias,
+            molestias magni optio deleniti? Nisi culpa est doloremque incidunt,
+            assumenda beatae maxime. Sed veritatis libero provident cumque esse
+            officiis totam? Porro blanditiis molestias nesciunt a sapiente
+            necessitatibus, officiis aut, quis incidunt in excepturi saepe,
+            numquam quos quam. Neque, obcaecati ut. Cupiditate dolorem iure
+            necessitatibus dolores eligendi ea quas nesciunt. Quos eos expedita
+            doloremque placeat dicta similique reiciendis?
+          </p>
         </div>
       </div>
     </div>
@@ -121,7 +123,7 @@
         style="transform: translatex(8vw)"
         class="pulse col-4 border border-primary p-3 text-primary mainfont pt-4"
       >
-        ! Warning !
+        <i class="mdi text-primary fs-1 mdi-alert"></i>
         <h6 class="border border-primary p-1 col-12 mb-5 text-primary">
           passion and mission driven developer
           <span class="col-1 textinput mainfont mx-1 px-1"> </span>
@@ -136,20 +138,12 @@
     <div class="row mt-5 justify-content-start">
       <div
         style="z-index: 2"
-        class="col-12 bg-dark rounded-bottom p-5 mt-5 text-primary mainfont"
+        class="col-6 rounded-bottom p-5 mt-5 text-primary mainfont"
       >
-        <h1 class="tshadow">SKILLS</h1>
+        <h1 class="tshadow fs-1 border-bottom">SKILLS</h1>
 
         <div
-          class="
-            container-fluid
-            bg-dark
-            rounded
-            mt-3
-            d-flex
-            justify-content-around
-            row
-          "
+          class="container-fluid rounded mt-3 d-flex justify-content-around row"
         >
           <img
             id="this"
@@ -181,7 +175,7 @@
             title="Node.js and NPM Servers"
           />
           <img
-            class="img-fluid col-2 mt-5 mb-5"
+            class="img-fluid pt-4 col-2 mt-5 mb-5"
             id="andthis"
             src="src\assets\img\bootstrap-logo-vector.svg"
             alt=""
@@ -220,8 +214,8 @@
             id="this"
             src="src\assets\img\CSS3_logo_and_wordmark.svg"
             alt=""
-            style="height: 33vh"
             title="CSS"
+            style="height: 13vh"
           />
           <img
             id="that"
@@ -229,6 +223,7 @@
             src="src\assets\img\dot-NET-Core.png"
             alt=""
             title=".NET Framework"
+            style="height: 13vh"
           />
           <img
             id="that"
@@ -236,9 +231,28 @@
             src="src\assets\img\auth0.png"
             alt=""
             title="Auth0 Services"
+            style="height: 13vhe"
           />
         </div>
       </div>
+    </div>
+    <div class="row pulse p-5">
+      <img
+        class="col-6 pulse mb-5 p-5 pulse"
+        src="src\assets\img\Recurso 31GRAPHS.svg"
+        alt=""
+      />
+      <div class="row justify-content-end">
+        <i class="mdi text-end text-primary fs-1 mdi-alert"></i>
+        <h6 class="border border-primary p-1 col-3 mb-5 text-primary">
+          passion and mission driven developer
+          <span class="col-1 textinput mainfont mx-1 px-1"> </span>
+        </h6>
+      </div>
+      <img style="z-index: 0" src="src\assets\img\Recurso 6GRAPHS.svg" alt="" />
+    </div>
+    <div class="row">
+      <h1 class="text-primary col-12 p-5 mt-5 bg-dark">SOMETHING HERE</h1>
     </div>
   </div>
 </template>
@@ -315,7 +329,7 @@ body {
 .cube-wrap {
   --size: 33vmin;
   position: fixed;
-  top: 55%;
+  top: 45%;
   left: 70%;
   width: 0;
   height: 0;
@@ -323,7 +337,7 @@ body {
 }
 .cube {
   transform-style: preserve-3d;
-  transform: rotateX(95deg) rotateZ(40deg) rotateY(-45deg);
+  transform: rotateX(45deg) rotateZ(40deg) rotateY(-45deg);
   animation: cube 1s linear;
 }
 @keyframes cube {
@@ -417,7 +431,8 @@ body {
     filter: drop-shadow(0px 0px 5px rgba(100, 255, 100, 0.089));
   }
   100% {
-    filter: drop-shadow(0px 0px 5.2px rgba(100, 255, 100, 0));
+    filter: drop-shadow(0px 0px 5.2px rgba(100, 255, 100, 0)),
+      hue-rotate(360deg);
   }
 }
 
