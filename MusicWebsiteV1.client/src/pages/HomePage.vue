@@ -230,6 +230,27 @@
             alt=""
             title="Auth0 Services"
           />
+          <img
+            id="theother"
+            class="img-fluid object-fit col-2 mt-5 mb-5"
+            src="src\assets\img\Git-Icon-1788C.png"
+            alt=""
+            title="Git"
+          />
+          <img
+            id="andthis"
+            class="img-fluid object-fit px-0 col-2 mt-5 mb-5"
+            src="src\assets\img\figma.png"
+            alt=""
+            title="Figma"
+          />
+          <img
+            id="this"
+            class="img-fluid object-fit col-2 mt-5 mb-5"
+            src="src\assets\img\scrum.png"
+            alt=""
+            title="Scrum Framework"
+          />
         </div>
       </div>
     </div>
