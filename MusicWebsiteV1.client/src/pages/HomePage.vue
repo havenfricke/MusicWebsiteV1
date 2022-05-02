@@ -46,7 +46,7 @@
         style="z-index: 2"
         class="col-5 rounded-bottom p-5 mt-5 text-primary mainfont bg-dark"
       >
-        <h1 id="#" class="border-bottom tshadow">ABOUT</h1>
+        <h1 id="#" class="border-bottom tshadow textglow fs-2">ABOUT</h1>
         <p class="text-white tshadow">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore,
           quasi. Accusamus perspiciatis eligendi et similique consequuntur! Rem,
@@ -80,7 +80,7 @@
           style="z-index: 2"
           class="col-9 me-5 pt-5 mt-3 tshadow mainfont text-white"
         >
-          <h1 class="mt-4 text-primary ms-2">More</h1>
+          <h1 class="mt-4 text-primary ms-2 textglow fs-2">More</h1>
           <p class="ms-3">
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi
             impedit nostrum vel excepturi maxime deserunt eius suscipit
@@ -124,7 +124,7 @@
         class="pulse col-4 border border-primary p-3 text-primary mainfont pt-4"
       >
         <i class="mdi text-primary fs-1 mdi-alert"></i>
-        <h6 class="border border-primary p-1 col-12 mb-5 text-primary">
+        <h6 class="border textglow border-primary p-1 col-12 mb-5 text-primary">
           passion and mission driven developer
           <span class="col-1 textinput mainfont mx-1 px-1"> </span>
         </h6>
@@ -140,7 +140,7 @@
         style="z-index: 2"
         class="col-6 rounded-bottom p-5 mt-5 text-primary mainfont"
       >
-        <h1 class="tshadow fs-1 border-bottom">SKILLS</h1>
+        <h1 class="tshadow fs-1 border-bottom textglow fs-2">SKILLS</h1>
 
         <div
           class="container-fluid rounded mt-3 d-flex justify-content-around row"
@@ -215,7 +215,6 @@
             src="src\assets\img\CSS3_logo_and_wordmark.svg"
             alt=""
             title="CSS"
-            style="height: 13vh"
           />
           <img
             id="that"
@@ -223,7 +222,6 @@
             src="src\assets\img\dot-NET-Core.png"
             alt=""
             title=".NET Framework"
-            style="height: 13vh"
           />
           <img
             id="that"
@@ -231,28 +229,36 @@
             src="src\assets\img\auth0.png"
             alt=""
             title="Auth0 Services"
-            style="height: 13vh"
           />
         </div>
       </div>
     </div>
     <div class="row pulse p-5">
       <img
-        class="col-6 pulse mb-5 p-5 pulse"
+        class="col-5 pulse mb-5 p-5 pulse"
         src="src\assets\img\Recurso 31GRAPHS.svg"
         alt=""
       />
       <div class="row justify-content-end">
         <i class="mdi text-end text-primary fs-1 mdi-alert"></i>
-        <h6 class="border border-primary p-1 col-3 mb-5 text-primary">
+        <h6 class="border textglow border-primary p-1 col-3 mb-5 text-primary">
           passion and mission driven developer
           <span class="col-1 textinput mainfont mx-1 px-1"> </span>
         </h6>
       </div>
-      <img style="z-index: 0" src="src\assets\img\Recurso 6GRAPHS.svg" alt="" />
+      <div class="row d-flex justify-content-center">
+        <img
+          class="col-10"
+          style="z-index: 0"
+          src="src\assets\img\Recurso 6GRAPHS.svg"
+          alt=""
+        />
+      </div>
     </div>
     <div class="row">
-      <h1 class="text-primary col-12 p-5 mt-5 bg-dark">SOMETHING HERE</h1>
+      <div class="text-primary col-12 bg-dark p-5 mt-5">
+        <h1 class="textglow">SOMETHING HERE</h1>
+      </div>
     </div>
   </div>
 </template>
@@ -512,5 +518,15 @@ body {
     background-color: #00f867;
     text-decoration-color: #00f867;
   }
+}
+
+p,
+.textglow {
+  max-width: 55vw;
+  white-space: pre-line;
+  letter-spacing: 0.1em;
+  font-size: 1.1em;
+  color: #05e110ce;
+  filter: drop-shadow(0 0 2px #4aff3a7e);
 }
 </style>
